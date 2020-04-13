@@ -1,0 +1,94 @@
+import java.io.*;
+    import static java.lang.System.*;
+    import java.lang.Math;
+    import java.util.Scanner;
+public class PlanetWeight {
+    
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        Scanner scan1 = new Scanner(System.in);
+        Scanner scans = new Scanner(System.in);
+        Double weight;
+        String numberWeight;
+        String planetName;
+        for (int number = 0; number < 100000; number++){
+        
+        
+        System.out.println("Your weight on Earth is: ");
+        numberWeight = scan1.nextLine();
+        weight = Double.parseDouble(numberWeight);
+        
+        System.out.println("Which planet would you like to see your weight in?");
+        planetName = scans.nextLine();
+        
+        switch (planetName) {
+            case "Mercury":
+                double mercury = weight * .378;
+                System.out.println("Your weight on Mercury is " + mercury);
+                break;
+            case "mercury":
+                double mercury1 = weight * .378;
+                System.out.println("Your weight on Mercury is " + mercury1);
+                break;
+            case "Venus":
+                double venus = weight * .907;
+                System.out.println("Your weight on Venus is " + venus);
+                break;
+            case "venus":
+                double venus1 = weight * .907;
+                System.out.println("Your weight on Venus is " + venus1);
+                break;
+            case "Earth":
+                System.out.println("Look at a weighing scale!");
+                break;
+            case "earth":
+                System.out.println("Look at a weighing scale!");
+                break;
+            case "Mars":
+                double mars = weight * .377;
+                System.out.println("Your weight on Mars is " + mars);
+                break;
+            case "mars":
+                double mars1 = weight * .377;
+                System.out.println("Your weight on Mars is " + mars1);
+                break;
+            case "Jupiter":
+                double jupiter = weight * 2.36;
+                System.out.println("Your weight on Jupiter is " + jupiter);
+                break;
+            case "jupiter":
+                double jupiter1 = weight * 2.36;
+                System.out.println("Your weight on Jupiter is " + jupiter1);
+                break;
+            case "Saturn":
+                double saturn = weight * .916;
+                System.out.println("Your weight on Saturn is " + saturn);
+                break;
+            case "saturn":
+                double saturn1 = weight * .916;
+                System.out.println("Your weight on Saturn is " + saturn1);
+                break;
+            case "Uranus":
+                double uranus = weight * .889;
+                System.out.println("Your weight on Uranus is " + uranus);
+                break;
+            case "uranus":
+                double uranus1 = weight * .889;
+                System.out.println("Your weight on Uranus is " + uranus1);
+                break;
+            case "Neptune":
+                double neptune = weight * 1.12;
+                System.out.println("Your weight on Neptune is " + neptune);
+                break;
+            case "neptune":
+                double neptune1 = weight * 1.12;
+                System.out.println("Your weight on Neptune is " + neptune1);
+                break;
+            default:
+                System.out.println("Sorry that's not a planet!");
+                break;
+                
+        }   
+    }
+    }
+    }
